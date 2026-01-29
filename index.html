@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>个人简历</title>
+<style>
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,"Noto Sans","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;margin:0;padding:24px;background:#f6f8fb;color:#1c2434}
+header{max-width:980px;margin:0 auto 24px auto}
+h1{margin:0 0 8px 0;font-size:28px;color:#4c6fff}
+p.subtitle{margin:0;color:#55637a}
+main{max-width:980px;margin:0 auto;display:grid;grid-template-columns:1fr;gap:16px}
+.card{background:#ffffff;border:1px solid #e5e9f2;border-radius:12px;padding:16px}
+.card h2{margin:0 0 12px 0;font-size:20px}
+.list{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.list a{display:block;padding:10px 12px;border:1px solid #e0e6f3;border-radius:8px;text-decoration:none;color:#1c2434;background:#eef3ff}
+.list a:hover{border-color:#4c6fff;background:#fff}
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.kpis .kpi{background:#eef3ff;border:1px solid #e0e6f3;border-radius:8px;padding:10px;text-align:center}
+.projects{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.project{border:1px solid #e5e9f2;border-radius:12px;padding:12px;background:#ffffff;box-shadow:0 6px 18px rgba(28,36,52,0.06)}
+.project h3{margin:0 0 8px 0;font-size:18px;padding:12px;border-radius:12px;color:#1c2434}
+.carousel .slide:nth-child(1) .project h3{background:linear-gradient(180deg,#7BB9FF 0%,#E6F3FF 100%)}
+.carousel .slide:nth-child(2) .project h3{background:linear-gradient(180deg,#B892FF 0%,#F0E9FF 100%)}
+.carousel .slide:nth-child(3) .project h3{background:linear-gradient(180deg,#7DE3A1 0%,#EAF7EE 100%)}
+.carousel .slide:nth-child(4) .project h3{background:linear-gradient(180deg,#6CA8FF 0%,#E6F0FF 100%)}
+.foot{text-align:center;color:#7a8699;margin-top:24px}
+.about{display:flex;gap:16px;align-items:flex-start}
+.about .photo{width:96px;height:96px;overflow:hidden;border-radius:10px;border:1px solid #e5e9f2;background:#ffffff}
+.about .photo img{width:100%;height:100%;object-fit:cover}
+.about .meta{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.about .meta div{background:#f3f6fd;border:1px solid #e0e6f3;border-radius:8px;padding:8px}
+.carousel{position:relative;overflow:hidden}
+.carousel .track{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth}
+.carousel .slide{min-width:100%;scroll-snap-align:start}
+.nav{display:flex;justify-content:space-between;margin-top:8px}
+.nav button{padding:8px 12px;border:1px solid #e0e6f3;border-radius:8px;background:#e5edff;color:#1c2434;cursor:pointer}
+.nav button:hover{background:#d7e3ff;border-color:#4c6fff}
+@media (max-width:840px){.list{grid-template-columns:1fr}.projects{grid-template-columns:1fr}.kpis{grid-template-columns:repeat(2,1fr)}}
+</style>
+</head>
+<body>
+<header>
+  <h1>个人简历</h1>
+  <p class="subtitle">9年测试开发工程师，专注质量体系构建与自动化效能，跨端到后端全链路保障稳定与效率提升</p>
+</header>
+<main>
+  <section class="card">
+    <h2>个人介绍</h2>
+    <div class="about">
+      <div class="photo"><img src="资料/个人照.jpg" alt="个人照片"></div>
+      <div style="flex:1">
+        <div style="font-size:18px;margin-bottom:6px">张芳</div>
+        <div class="meta">
+          <div>
+            <div>性别：女</div>
+            <div>最高学历：本科</div>
+          </div>
+          <div>
+            <div>手机：182****2927</div>
+            <div>微信：xxxOrion</div>
+          </div>
+        </div>
+        <div style="margin-top:10px;color:#555">
+          资深测试开发工程师，拥有9年一线互联网及科技公司测试经验，专注测试体系构建与质量效能提升。具备从功能测试到测试开发、从移动端到后端系统的全链路测试能力。擅长通过自动化工具、流程优化与智能体技术，系统性提升测试效率与产品质量，在大型复杂项目（如贝壳财务系统、百度搜索）中实现测试覆盖率显著提升与重大线上事故预防。
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="card">
+    <h2>个人技能</h2>
+    <ul>
+      <li>熟悉测试理论与流程，具备大型项目完整测试经验与业务分析能力</li>
+      <li>问题定位与推动能力强，善于跨团队协作解决问题</li>
+      <li>熟练使用 Python 进行自动化测试，具备实际项目经验</li>
+      <li>熟练使用 MySQL、Linux 命令、Git 等工具链</li>
+      <li>熟练使用 Postman 进行接口测试，能使用 JMeter 进行压力测试</li>
+      <li>熟悉常用 ADB 命令，熟练使用抓包工具 Charles 进行数据分析</li>
+      <li>对 Web 与 App 的兼容性、稳定性、电量、弱网等测试有实践经验</li>
+    </ul>
+  </section>
+  <section class="card">
+    <h2>代表项目</h2>
+    <div class="carousel">
+      <div class="track">
+        <div class="slide">
+          <div class="project">
+            <h3>贝壳-二手财务系统（2022.12 – 2025.12）</h3>
+            <ul>
+              <li>质量体系构建：主导前后端服务SLA标准制定，设计发布上线SOP与灰度机制，搭建独立测试环境，解决研发测试环境冲突问题</li>
+              <li>测试效能突破：完善场景自动化覆盖率达80%以上，保障系统全年0重大资金差错</li>
+              <li>智能体应用：搭建造数智能体，显著提升测试数据构造效率，并推广至产研及上下游团队，赋能业务测试</li>
+              <li>UAT与协同：主导财务UAT全流程，协调多团队，构造复杂测试数据，确保系统完全符合财务规则</li>
+            </ul>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="project">
+            <h3>百度-搜索Top1项目（2021.10 – 2022.06）</h3>
+            <ul>
+              <li>搜索质量优化：构建检索/召回评测体系与统一口径，验证Top1/TopK相关性与准确率</li>
+              <li>性能与稳定性：搭建接口与并发压测自动化，跟踪P95/P99时延与吞吐，保障高并发稳定</li>
+              <li>数据与实验：设计A/B评测流程与版本对比，统一日志与指标采集，支撑结论复盘</li>
+              <li>发布与回滚：制定灰度/蓝绿策略与验证清单，建立快速回滚路径与问题定位机制</li>
+            </ul>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="project">
+            <h3>高途课堂-通宝客户端（PC）（2020.08 – 2021.07）</h3>
+            <ul>
+              <li>客户端质量体系：覆盖安装、升级、弱网与兼容性场景，建立端到端用例库</li>
+              <li>触达与转化：构建消息触达与推荐功能的A/B测试与数据校验，提升用户体验</li>
+              <li>性能与资源：监测页面性能与CPU/内存占用，优化首屏与关键交互响应</li>
+              <li>反馈与稳定性：采集崩溃/异常日志，推动问题闭环与版本稳定性提升</li>
+            </ul>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="project">
+            <h3>美团-摩拜单车/打车APP测试（2017.03 – 2020.06）</h3>
+            <ul>
+              <li>端到端场景：骑行/下单/支付/定位等关键链路覆盖与数据构造，保障核心流程稳定</li>
+              <li>弱网与耐久：模拟弱网、低电量、权限场景，验证重试与降级策略的有效性</li>
+              <li>兼容与设备：多机型/系统版本兼容性测试与问题归因，提升适配质量</li>
+              <li>监控与回归：建立回归自动化与上线前质量门禁，支撑高频发布稳定交付</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="nav">
+        <button class="prev">上一项</button>
+        <button class="next">下一项</button>
+      </div>
+    </div>
+  </section>
+  <section class="card">
+    <h2>自我评价</h2>
+    <p>热爱测试，对质量保障有强烈的责任心和好奇心。逻辑清晰，沟通高效，能快速融入团队并推动问题解决。具备出色的学习能力与执行力，能持续探索新方法、新工具以提升测试效率与深度，为产品稳定与团队效能创造价值。</p>
+  </section>
+  <section class="card">
+    <h2>快速入口</h2>
+    <div class="list">
+      <a href="readme.md" target="_blank">README（展示结构）</a>
+      <a href="prd.md" target="_blank">PRD（需求文档）</a>
+      <a href="docs/architecture.md" target="_blank">架构文档</a>
+      <a href="docs/ui-architecture.md" target="_blank">UI 架构文档</a>
+      <a href="docs/tech-profile.md" target="_blank">技术档案</a>
+      <a href="stories/README.md" target="_blank">Stories 索引</a>
+      <a href="assets/README.md" target="_blank">assets 命名与结构</a>
+      <a href="资料/张芳-本科-9年测开经验.pdf" download>简历PRD</a>
+    </div>
+  </section>
+  <div class="foot">准备好素材后，直接替换占位图与 KPI 表即可发布</div>
+</main>
+<script>
+(function(){
+  var t=document.querySelector('.carousel .track');
+  var p=document.querySelector('.carousel .prev');
+  var n=document.querySelector('.carousel .next');
+  function s(o){t.scrollBy({left:o,behavior:'smooth'})}
+  p.addEventListener('click',function(){s(-t.clientWidth)});
+  n.addEventListener('click',function(){s(t.clientWidth)});
+})();
+</script>
+</body>
+</html>

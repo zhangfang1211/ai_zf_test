@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>个人介绍</title>
+<style>
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,"Noto Sans","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;margin:0;padding:24px;background:#f7f7f9;color:#222}
+main{max-width:980px;margin:0 auto;display:grid;grid-template-columns:1fr;gap:16px}
+.header{display:flex;gap:16px;align-items:flex-start}
+.photo{width:160px;height:160px;overflow:hidden;border-radius:12px;border:1px solid #e5e7eb;background:#fff}
+.photo img{width:100%;height:100%;object-fit:cover}
+.card{background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:16px}
+.card h2{margin:0 0 12px 0;font-size:20px}
+.info{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.info div{background:#fafafa;border:1px solid #e5e7eb;border-radius:8px;padding:10px}
+ul{margin:8px 0 0 20px}
+a{color:#0f172a;text-decoration:none}
+a:hover{text-decoration:underline}
+</style>
+</head>
+<body>
+<main>
+  <section class="card">
+    <div class="header">
+      <div class="photo">
+        <img src="资料/个人照.jpg" alt="个人照片">
+      </div>
+      <div>
+        <h1 style="margin:0 0 8px 0;font-size:26px">张芳</h1>
+        <p style="margin:0;color:#555">测试与自动化 · Python/MySQL/Linux · Web/App/接口/性能</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>基本信息</h2>
+    <div class="info">
+      <div>
+        <div>性别：女</div>
+        <div>最高学历：本科</div>
+      </div>
+      <div>
+        <div>手机：182****2927</div>
+        <div>微信：xxxOrion</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>个人技能</h2>
+    <ul>
+      <li>熟悉测试理论与流程，具备大型项目完整测试经验与业务分析能力</li>
+      <li>问题定位与推动能力强，善于跨团队协作解决问题</li>
+      <li>熟练使用 Python 进行自动化测试，具备实际项目经验</li>
+      <li>熟练使用 MySQL、Linux 命令、Git 版本管理工具</li>
+      <li>熟练使用 Postman 进行接口测试，能使用 JMeter 进行压力测试</li>
+      <li>熟悉常用 ADB 命令，熟练使用抓包工具 Charles 进行数据分析</li>
+      <li>对 Web 平台与 App 的兼容性、稳定性、电量、弱网等测试有实践经验</li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2>相关链接</h2>
+    <ul>
+      <li><a href="index.html">返回首页</a></li>
+      <li><a href="readme.md">AI 项目与成就展示</a></li>
+      <li><a href="prd.md">PRD 文档</a></li>
+    </ul>
+  </section>
+</main>
+</body>
+</html>
